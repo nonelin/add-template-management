@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: 增加範本管理
-Plugin URI: http://wordpress.org/plugins/add-tamplate/
+Plugin URI: https://github.com/nonelin/add-template-management
 Description: 從後臺上傳範本檔案，方便在頁面中選擇範本，這裡只會管理外掛所上船的範本檔案。
 Author: AWei
 Version: 1.0.0
