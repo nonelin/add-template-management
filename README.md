@@ -5,6 +5,8 @@
 - 後臺上傳頁面與範本檔案列表。
 - 可以刪除上傳的範本檔案。
 - 在頁面編輯畫面可以選擇上傳範本。
+- CSS 上傳與列表(尚未)。
+- JS 上傳與列表(尚未)。
 
 ## 介面圖片
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d01.png" alt="Total Downloads">
