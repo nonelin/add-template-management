@@ -8,6 +8,8 @@
 - CSS 上傳與列表(尚未)。
 - JS 上傳與列表(尚未)。
 
+*上述上船的範本檔案將會儲存到外掛路徑裡。
+
 ## 介面圖片
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d01.png" alt="Total Downloads">
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d02.png" alt="Total Downloads">
