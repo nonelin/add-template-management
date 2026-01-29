@@ -1,7 +1,8 @@
 <?php
-// 將外掛 templates 資料夾中的檔案動態加入頁面範本選單
+// 將外掛 上傳至 uplode/atm/templates 資料夾中的檔案動態加入頁面範本選單
 add_filter('theme_page_templates', function($templates) {
-    $plugin_templates_dir = plugin_dir_path(__FILE__) . 'templates/';
+    $upload_info = wp_upload_dir();
+    $plugin_templates_dir = trailingslashit( $upload_info['basedir'] ) . 'atm/templates/';
     if (file_exists($plugin_templates_dir)) {
         $files = glob($plugin_templates_dir . '*.php');
         foreach ($files as $file) {
@@ -24,7 +25,8 @@ add_filter('template_include', function($template) {
     if (is_page()) {
         $selected = get_page_template_slug(get_queried_object_id());
         if (strpos($selected, 'add-template/') === 0) {
-            $plugin_template = plugin_dir_path(__FILE__) . 'templates/' . basename($selected);
+            $upload_info = wp_upload_dir();
+            $plugin_template = trailingslashit( $upload_info['basedir'] ) . 'atm/templates/' . basename($selected);
             if (file_exists($plugin_template)) {
                 return $plugin_template;
             }
