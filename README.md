@@ -10,9 +10,9 @@
 
 *上述上船的範本檔案將會儲存到外掛路徑裡(修改)。
 
-##20260129 更新
--修改上傳路徑:從外掛內改到uplode裡，例如:uplode/atm/templaes。
--添加上傳目錄安全性檢查。
+## 20260129 更新
+- 修改上傳路徑:從外掛內改到uplode裡，例如:uplode/atm/templaes。
+- 添加上傳目錄安全性檢查。
 
 ## 介面圖片
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d01.png" alt="Total Downloads">
