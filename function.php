@@ -34,3 +34,35 @@ add_filter('template_include', function($template) {
     }
     return $template;
 });
+
+// 在前端加載 CSS 檔案
+add_action('wp_enqueue_scripts', function() {
+    $upload_info = wp_upload_dir();
+    $css_dir = trailingslashit($upload_info['basedir']) . 'atm/css/';
+    $css_url = trailingslashit($upload_info['baseurl']) . 'atm/css/';
+    
+    if (file_exists($css_dir)) {
+        $css_files = glob($css_dir . '*.css');
+        foreach ($css_files as $file) {
+            $filename = basename($file);
+            $handle = 'atm-css-' . pathinfo($filename, PATHINFO_FILENAME);
+            wp_enqueue_style($handle, $css_url . $filename, [], filemtime($file));
+        }
+    }
+});
+
+// 在前端加載 JS 檔案
+add_action('wp_enqueue_scripts', function() {
+    $upload_info = wp_upload_dir();
+    $js_dir = trailingslashit($upload_info['basedir']) . 'atm/js/';
+    $js_url = trailingslashit($upload_info['baseurl']) . 'atm/js/';
+    
+    if (file_exists($js_dir)) {
+        $js_files = glob($js_dir . '*.js');
+        foreach ($js_files as $file) {
+            $filename = basename($file);
+            $handle = 'atm-js-' . pathinfo($filename, PATHINFO_FILENAME);
+            wp_enqueue_script($handle, $js_url . $filename, [], filemtime($file), true);
+        }
+    }
+}, 11);
