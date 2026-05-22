@@ -211,6 +211,7 @@ function add_tamplate_dashboard_html() {
   <li><strong>增加CSS</strong> - 上傳 CSS 檔案</li>
   <li><strong>增加JS</strong> - 上傳 JavaScript 檔案</li>
 </ul>
+<p>*上傳檔案都在 wp-content/uploads/atm/ 目錄中</p>
 </div>
 <?php
 }
@@ -294,7 +295,7 @@ function add_tamplate_files_html() {
 <div class="upload-plugin-wrap">
   <div class="upload-plugin" style="display: block; padding: 0;">
   <p class="install-help">請在這裡上傳 php 格式的範本檔案。</p>
-  <form method="post" enctype="multipart/form-data" class="wp-upload-form" style="display: ruby-base;">
+  <form method="post" enctype="multipart/form-data" class="wp-upload-form">
     <?php wp_nonce_field('upload_template_file', 'template_file_nonce'); ?>
     <div class="file-upload-field">
       <label class="screen-reader-text" for="templatefile">選擇檔案</label>
@@ -428,7 +429,7 @@ function add_tamplate_css_html() {
 <div class="upload-plugin-wrap">
   <div class="upload-plugin" style="display: block; padding: 0;">
   <p class="install-help">請在這裡上傳 CSS 格式的檔案。</p>
-  <form method="post" enctype="multipart/form-data" class="wp-upload-form" style="display: ruby-base;">
+  <form method="post" enctype="multipart/form-data" class="wp-upload-form">
     <?php wp_nonce_field('upload_css_file', 'css_file_nonce'); ?>
     <div class="file-upload-field">
       <label class="screen-reader-text" for="cssfile">選擇檔案</label>
@@ -552,7 +553,7 @@ function add_tamplate_js_html() {
 <div class="upload-plugin-wrap">
   <div class="upload-plugin" style="display: block; padding: 0;">
   <p class="install-help">請在這裡上傳 JavaScript 格式的檔案。</p>
-  <form method="post" enctype="multipart/form-data" class="wp-upload-form" style="display: ruby-base;">
+  <form method="post" enctype="multipart/form-data" class="wp-upload-form">
     <?php wp_nonce_field('upload_js_file', 'js_file_nonce'); ?>
     <div class="file-upload-field">
       <label class="screen-reader-text" for="jsfile">選擇檔案</label>
