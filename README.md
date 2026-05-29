@@ -20,6 +20,15 @@
 - 添加上傳CSS、JS檔案與列表頁面。
 - 檔案列表改為使用 WP_list_table。
 
+## 範本開頭
+<code>
+<?php
+/*
+Template Name: 範本名稱
+*/
+?>
+</code>
+
 ## 介面圖片
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d01.png" alt="Total Downloads">
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d02.png" alt="Total Downloads">
