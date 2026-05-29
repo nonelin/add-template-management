@@ -21,11 +21,10 @@
 - 檔案列表改為使用 WP_list_table。
 
 ## 範本開頭
-```<?php
-```/*
-``Template Name: 第二個自訂範本
-``*/
-``?>
+<?php
+/*
+Template Name: 第二個自訂範本*/
+?>
 
 ## 介面圖片
 <img src="https://dafatime.idv.tw/wp-content/uploads/2025/06/plugin_d01.png" alt="Total Downloads">
