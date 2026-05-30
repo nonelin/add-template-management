@@ -22,7 +22,7 @@
 
 ## 範本開頭
 <pre>
-<?php
+```<?php
 /*
 Template Name: 第二個自訂範本*/
 ?>
