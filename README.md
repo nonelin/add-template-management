@@ -25,7 +25,7 @@
 ```php
 <?php
 /*
-Template Name: 第二個自訂範本
+Template Name: 自訂範本名稱
 */
 ?>
 ```
